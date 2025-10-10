@@ -21,7 +21,7 @@ class DrawingViewModel : ViewModel() {
         }
     }
 
-    fun setDrawElement(element: Any) {
+    fun addDrawElement(element: Any) {
         viewModelScope.launch {
             _drawElements.value += element
         }
