@@ -9,18 +9,22 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
 import hu.bme.aut.android.simpledrawer.ui.theme.common.BottomBar
 import hu.bme.aut.android.simpledrawer.ui.theme.common.TopBar
 
 @Composable
-fun DrawingScreen(modifier: Modifier = Modifier) {
+fun DrawingScreen(
+    modifier: Modifier = Modifier,
+    viewModel: DrawingViewModel = viewModel()
+) {
     Scaffold(
         modifier = modifier,
         topBar = {
             TopBar()
         },
         bottomBar = {
-            BottomBar()
+            BottomBar(viewModel = viewModel)
         }
     ) {
         innerPadding ->
