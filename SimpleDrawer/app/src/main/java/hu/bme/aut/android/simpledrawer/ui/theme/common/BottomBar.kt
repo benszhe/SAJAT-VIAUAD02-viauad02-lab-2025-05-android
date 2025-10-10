@@ -22,7 +22,7 @@ fun BottomBar() {
     BottomAppBar(
         actions = { //atadunk composable parametereket, amik megjelennek
             Row(    //majd az AppBaron
-                modifier = Modifier
+                modifier = Modifier //OKX6ND
                     .fillMaxSize(),
                 horizontalArrangement = Arrangement.End,
                 verticalAlignment = Alignment.CenterVertically
